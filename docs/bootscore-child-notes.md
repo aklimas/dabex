@@ -117,3 +117,15 @@ $fields   = $args['fields'];
   - `ddev wp theme status` – kontrola czy child jest aktywny.
 
 Tę dokumentację aktualizujemy za każdym razem, gdy wypracujemy nowy pattern (np. slider produktów, CTA, integracje JS). Dzięki temu kolejne wdrożenia zachowają spójność techniczną i wizualną.
+
+### 5.4. Dostępne layouty (Flexible Content)
+- `section-hero` – nagłówek strony z animacją/obrazem, CTA i opcjonalną nakładką.
+- `section-generic` – uniwersalny blok tekst + media.
+- `section-catalog` – siatka kategorii/marek z filtrami (2×4 kafle).
+- `section-brand` – spotlight jednej marki z opisem i kaflami produktów.
+- `section-benefits` – lista korzyści/USP w układzie 3 kolumn.
+- `section-highlight` – podwójne CTA (np. dopasowane rozwiązania + szkolenia).
+- `section-blog` – teaser bazy wiedzy (WP_Query).
+- `section-contact` – ostatni call-to-action + formularz/shortcode.
+
+W razie potrzeby tworzymy kolejne partiale w `template-parts/sections/` i dopisujemy layout do `acf-json/group_dabex_sections.json`, pamiętając o unikalnych `field_` kluczach.

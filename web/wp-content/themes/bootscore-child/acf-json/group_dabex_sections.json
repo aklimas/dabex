@@ -503,6 +503,1129 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_dabex_section_catalog": {
+                    "key": "layout_dabex_section_catalog",
+                    "name": "section-catalog",
+                    "label": "Siatka kategorii / marek",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_catalog_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_catalog_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_catalog_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_catalog_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_catalog_title",
+                            "label": "Tytu?",
+                            "name": "catalog_title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Poznaj najlepsze ?rodki czysto?ci dla firm i dom?w"
+                        },
+                        {
+                            "key": "field_dabex_catalog_subtitle",
+                            "label": "Opis",
+                            "name": "catalog_subtitle",
+                            "type": "textarea",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 3
+                        },
+                        {
+                            "key": "field_dabex_catalog_filters",
+                            "label": "Filtry / tagi",
+                            "name": "catalog_filters",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Dodaj filtr",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_catalog_filter_label",
+                                    "label": "Etykieta",
+                                    "name": "label",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_catalog_filter_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_dabex_catalog_cards",
+                            "label": "Kafle kategorii",
+                            "name": "catalog_cards",
+                            "type": "repeater",
+                            "layout": "block",
+                            "button_label": "Dodaj kafel",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_catalog_card_image",
+                                    "label": "Obraz",
+                                    "name": "image",
+                                    "type": "image",
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_catalog_card_title",
+                                    "label": "Tytu?",
+                                    "name": "title",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_catalog_card_desc",
+                                    "label": "Opis",
+                                    "name": "description",
+                                    "type": "textarea",
+                                    "rows": 3,
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_catalog_card_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "return_format": "array",
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_brand": {
+                    "key": "layout_dabex_section_brand",
+                    "name": "section-brand",
+                    "label": "Blok marki / serii",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_brand_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_brand_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_brand_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_brand_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_brand_logo",
+                            "label": "Logo marki",
+                            "name": "brand_logo",
+                            "type": "image",
+                            "return_format": "array",
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_brand_name",
+                            "label": "Nazwa marki",
+                            "name": "brand_name",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_brand_highlight",
+                            "label": "Nag??wek",
+                            "name": "brand_heading",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_brand_description",
+                            "label": "Opis",
+                            "name": "brand_description",
+                            "type": "wysiwyg",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_brand_link",
+                            "label": "Link CTA",
+                            "name": "brand_link",
+                            "type": "link",
+                            "return_format": "array",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_brand_cards",
+                            "label": "Kafle produkt?w",
+                            "name": "brand_cards",
+                            "type": "repeater",
+                            "layout": "table",
+                            "button_label": "Dodaj kafel",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_brand_card_image",
+                                    "label": "Obraz",
+                                    "name": "image",
+                                    "type": "image",
+                                    "return_format": "array",
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_brand_card_title",
+                                    "label": "Tytu?",
+                                    "name": "title",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "25",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_brand_card_desc",
+                                    "label": "Opis",
+                                    "name": "description",
+                                    "type": "textarea",
+                                    "rows": 2,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_brand_card_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "return_format": "array",
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_benefits": {
+                    "key": "layout_dabex_section_benefits",
+                    "name": "section-benefits",
+                    "label": "Korzy?ci / USP",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_benefits_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_benefits_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_benefits_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_benefits_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_benefits_title",
+                            "label": "Tytu?",
+                            "name": "benefits_title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_benefits_intro",
+                            "label": "Opis",
+                            "name": "benefits_intro",
+                            "type": "textarea",
+                            "rows": 3,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_benefits_items",
+                            "label": "Korzy?ci",
+                            "name": "benefits",
+                            "type": "repeater",
+                            "layout": "block",
+                            "button_label": "Dodaj korzy??",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_benefits_icon",
+                                    "label": "Ikona (SVG / klasa)",
+                                    "name": "icon",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "instructions": "Wpisz klas? Font Awesome lub SVG inline."
+                                },
+                                {
+                                    "key": "field_dabex_benefits_item_title",
+                                    "label": "Tytu?",
+                                    "name": "title",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_benefits_item_desc",
+                                    "label": "Opis",
+                                    "name": "description",
+                                    "type": "textarea",
+                                    "rows": 3,
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_highlight": {
+                    "key": "layout_dabex_section_highlight",
+                    "name": "section-highlight",
+                    "label": "Sekcja podw?jna CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_highlight_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_highlight_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_highlight_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_highlight_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_highlight_title",
+                            "label": "Tytu?",
+                            "name": "highlight_title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_highlight_intro",
+                            "label": "Opis",
+                            "name": "highlight_intro",
+                            "type": "textarea",
+                            "rows": 3,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_highlight_cards",
+                            "label": "Karty CTA",
+                            "name": "highlight_cards",
+                            "type": "repeater",
+                            "layout": "block",
+                            "min": 1,
+                            "max": 2,
+                            "button_label": "Dodaj kart?",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_highlight_card_title",
+                                    "label": "Tytu?",
+                                    "name": "title",
+                                    "type": "text",
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_highlight_card_desc",
+                                    "label": "Opis",
+                                    "name": "description",
+                                    "type": "textarea",
+                                    "rows": 3,
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_highlight_card_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "return_format": "array",
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_blog": {
+                    "key": "layout_dabex_section_blog",
+                    "name": "section-blog",
+                    "label": "Baza wiedzy / wpisy",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_blog_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_blog_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_blog_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_blog_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_blog_title",
+                            "label": "Tytu?",
+                            "name": "blog_title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_blog_intro",
+                            "label": "Opis",
+                            "name": "blog_intro",
+                            "type": "textarea",
+                            "rows": 3,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_blog_category",
+                            "label": "Kategoria wpis?w",
+                            "name": "blog_category",
+                            "type": "taxonomy",
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "add_term": 0,
+                            "return_format": "id",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_blog_count",
+                            "label": "Liczba wpis?w",
+                            "name": "blog_count",
+                            "type": "number",
+                            "default_value": 3,
+                            "min": 1,
+                            "max": 6,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_blog_button",
+                            "label": "Przycisk 'Zobacz wszystkie'",
+                            "name": "blog_button",
+                            "type": "link",
+                            "return_format": "array",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_contact": {
+                    "key": "layout_dabex_section_contact",
+                    "name": "section-contact",
+                    "label": "CTA / Kontakt",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_contact_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (do nawigacji anchor).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. sekcja",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_contact_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_contact_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "gradient": "Gradient firmowy"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_contact_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_contact_title",
+                            "label": "Tytu?",
+                            "name": "contact_title",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_contact_text",
+                            "label": "Opis",
+                            "name": "contact_text",
+                            "type": "textarea",
+                            "rows": 3,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_contact_button",
+                            "label": "Przycisk",
+                            "name": "contact_button",
+                            "type": "link",
+                            "return_format": "array",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_contact_form",
+                            "label": "Shortcode formularza",
+                            "name": "contact_form",
+                            "type": "text",
+                            "instructions": "Wstaw [contact-form-7] lub ACF Form",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Dodaj sekcję",

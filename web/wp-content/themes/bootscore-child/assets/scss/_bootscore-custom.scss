@@ -68,3 +68,53 @@
     z-index: -2;
   }
 }
+
+.bg-dabex-gradient {
+  background: linear-gradient(135deg, #0f1b4c, #1e73be);
+}
+
+.dabex-section--section-catalog {
+  .dabex-card {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 1.25rem 2.5rem rgba(15, 27, 76, 0.12);
+    }
+  }
+}
+
+.dabex-section--section-brand {
+  .brand-logo {
+    max-height: 60px;
+    width: auto;
+  }
+}
+
+.dabex-section--section-benefits {
+  background-color: #f5f8ff;
+
+  .benefit-card__icon i {
+    font-size: 2.5rem;
+    color: #1e73be;
+  }
+}
+
+.dabex-section--section-highlight {
+  background-color: #eff5ff;
+
+  .cta-panel {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+}
+
+.dabex-section--section-blog {
+  .dabex-blog-card .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.dabex-section--section-contact {
+  background: linear-gradient(135deg, #0f1b4c, #2c5cff);
+}

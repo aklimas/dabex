@@ -153,6 +153,7 @@ function dabex_map_section_theme($choice) {
         'primary'  => 'bg-primary text-white',
         'secondary'=> 'bg-secondary text-white',
         'muted'    => 'bg-body-secondary',
+        'gradient' => 'bg-dabex-gradient text-white',
     ];
 
     return $map[$choice] ?? '';
