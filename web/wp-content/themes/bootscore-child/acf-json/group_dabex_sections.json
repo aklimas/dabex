@@ -246,7 +246,7 @@
                 "layout_dabex_section_hero": {
                     "key": "layout_dabex_section_hero",
                     "name": "section-hero",
-                    "label": "Hero (nag??wek strony)",
+                    "label": "Hero (nagłówek strony)",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -265,13 +265,13 @@
                         },
                         {
                             "key": "field_dabex_hero_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
                             "choices": {
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże",
                                 "none": "Brak"
                             },
                             "default_value": "xl",
@@ -284,7 +284,7 @@
                         },
                         {
                             "key": "field_dabex_hero_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
                             "choices": {
@@ -303,7 +303,7 @@
                         },
                         {
                             "key": "field_dabex_hero_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "default_value": 1,
@@ -329,7 +329,7 @@
                         },
                         {
                             "key": "field_dabex_hero_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "section_title",
                             "type": "text",
                             "required": 1,
@@ -426,7 +426,7 @@
                         },
                         {
                             "key": "field_dabex_hero_background_image",
-                            "label": "T?o hero",
+                            "label": "Tło hero",
                             "name": "hero_background_image",
                             "type": "image",
                             "wrapper": {
@@ -439,7 +439,7 @@
                         },
                         {
                             "key": "field_dabex_hero_overlay_color",
-                            "label": "Nak?adka t?a",
+                            "label": "Nakładka tła",
                             "name": "hero_overlay",
                             "type": "select",
                             "choices": {
@@ -478,7 +478,7 @@
                         },
                         {
                             "key": "field_dabex_hero_overlay_opacity",
-                            "label": "Przezroczysto?? nak?adki",
+                            "label": "Przezroczystość nakładki",
                             "name": "hero_overlay_opacity",
                             "type": "number",
                             "conditional_logic": [
@@ -505,7 +505,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Dodaj sekcj?",
+            "button_label": "Dodaj sekcję",
             "min": "",
             "max": ""
         }

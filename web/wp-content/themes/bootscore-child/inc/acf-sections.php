@@ -34,17 +34,23 @@ add_action('bootscore_after_featured_image', 'dabex_render_acf_sections', 15, 1)
  * Render the Flexible Content field `sections` as stacked <section> blocks.
  */
 function dabex_render_acf_sections($context = '') {
-    if (!function_exists('have_rows') || !is_singular() || !have_rows('sections')) {
+    if (!function_exists('have_rows') || !is_singular()) {
+        return;
+    }
+
+    $post_id = get_the_ID();
+
+    if (!have_rows('sections', $post_id)) {
         return;
     }
 
     echo '<div class="dabex-acf-sections" data-context="' . esc_attr($context) . '">';
 
-    while (have_rows('sections')) {
+    while (have_rows('sections', $post_id)) {
         the_row();
 
         $layout      = get_row_layout();
-        $raw_fields  = dabex_get_current_section_fields();
+        $raw_fields  = dabex_get_current_section_fields($post_id);
         $section_id  = !empty($raw_fields['section_id']) ? sanitize_title($raw_fields['section_id']) : dabex_generate_section_id($layout);
         $full_width  = !empty($raw_fields['section_full_width']);
         $spacing     = dabex_map_section_spacing($raw_fields['section_spacing'] ?? '');
@@ -88,8 +94,9 @@ function dabex_get_section_template($layout, $args) {
 /**
  * Retrieve the raw field data for the current row index.
  */
-function dabex_get_current_section_fields() {
-    $rows  = get_field('sections', get_the_ID(), false);
+function dabex_get_current_section_fields($post_id = null) {
+    $post_id = $post_id ?: get_the_ID();
+    $rows  = get_field('sections', $post_id);
     $index = get_row_index();
 
     if (!$rows || !isset($rows[$index - 1])) {
