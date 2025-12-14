@@ -1,0 +1,539 @@
+{
+    "key": "group_dabex_sections",
+    "title": "Sekcje strony (Dabex)",
+    "fields": [
+        {
+            "key": "field_dabex_sections",
+            "label": "Sekcje",
+            "name": "sections",
+            "type": "flexible_content",
+            "instructions": "Dodawaj gotowe sekcje projektu. Mo?esz zmienia? ich kolejno?? metod? przeci?gnij i upu??.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_dabex_section_generic": {
+                    "key": "layout_dabex_section_generic",
+                    "name": "section-generic",
+                    "label": "Sekcja og?lna",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_generic_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML (np. do nawigacji anchor). Je?li puste, zostanie wygenerowane automatycznie.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "np. oferta",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_generic_section_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "instructions": "Mapuje si? na klasy Bootstrap (py-*).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "none": "Brak",
+                                "xs": "Bardzo ma?e",
+                                "sm": "Ma?e",
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e"
+                            },
+                            "default_value": "default",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_generic_section_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "instructions": "Wybierz predefiniowane t?o i kolor tekstu.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Domy?lne",
+                                "light": "Jasne t?o",
+                                "muted": "Muted",
+                                "dark": "Ciemne",
+                                "primary": "Primary",
+                                "secondary": "Secondary"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_dabex_generic_section_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "instructions": "W??cz, aby sekcja by?a rozci?gni?ta na pe?n? szeroko?? okna (bez kontenera).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Pe?na szeroko?? (bez standardowego kontenera)",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_generic_title",
+                            "label": "Tytu?",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Np. Dlaczego my?",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_dabex_generic_content",
+                            "label": "Tre??",
+                            "name": "section_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_dabex_generic_media",
+                            "label": "Media",
+                            "name": "section_media",
+                            "type": "image",
+                            "instructions": "Obraz lub grafika wy?wietlana obok tre?ci.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_dabex_generic_buttons",
+                            "label": "Przyciski",
+                            "name": "section_buttons",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Dodaj przycisk",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_generic_button_label",
+                                    "label": "Etykieta",
+                                    "name": "label",
+                                    "type": "text",
+                                    "required": 1,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_generic_button_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "required": 1,
+                                    "wrapper": {
+                                        "width": "40",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                },
+                                {
+                                    "key": "field_dabex_generic_button_variant",
+                                    "label": "Styl",
+                                    "name": "variant",
+                                    "type": "select",
+                                    "choices": {
+                                        "primary": "Primary",
+                                        "secondary": "Secondary",
+                                        "outline-light": "Outline Light",
+                                        "outline-dark": "Outline Dark",
+                                        "link": "Link"
+                                    },
+                                    "default_value": "primary",
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "ui": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_dabex_section_hero": {
+                    "key": "layout_dabex_section_hero",
+                    "name": "section-hero",
+                    "label": "Hero (nag??wek strony)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_dabex_hero_section_id",
+                            "label": "ID sekcji",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Opcjonalne ID HTML.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_hero_spacing",
+                            "label": "Odst?py pionowe",
+                            "name": "section_spacing",
+                            "type": "select",
+                            "choices": {
+                                "default": "Domy?lne",
+                                "lg": "Du?e",
+                                "xl": "Bardzo du?e",
+                                "none": "Brak"
+                            },
+                            "default_value": "xl",
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_dabex_hero_theme",
+                            "label": "Motyw t?a",
+                            "name": "section_theme",
+                            "type": "select",
+                            "choices": {
+                                "dark": "Ciemny",
+                                "light": "Jasny",
+                                "primary": "Primary",
+                                "secondary": "Secondary"
+                            },
+                            "default_value": "dark",
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_dabex_hero_fullwidth",
+                            "label": "Pe?na szeroko??",
+                            "name": "section_full_width",
+                            "type": "true_false",
+                            "default_value": 1,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "ui": 1,
+                            "ui_on_text": "Tak",
+                            "ui_off_text": "Nie"
+                        },
+                        {
+                            "key": "field_dabex_hero_kicker",
+                            "label": "Kicker",
+                            "name": "hero_kicker",
+                            "type": "text",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_hero_title",
+                            "label": "Tytu?",
+                            "name": "section_title",
+                            "type": "text",
+                            "required": 1,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "key": "field_dabex_hero_content",
+                            "label": "Opis",
+                            "name": "section_content",
+                            "type": "textarea",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 4,
+                            "new_lines": "br"
+                        },
+                        {
+                            "key": "field_dabex_hero_media",
+                            "label": "Obraz / mockup",
+                            "name": "section_media",
+                            "type": "image",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "large"
+                        },
+                        {
+                            "key": "field_dabex_hero_buttons",
+                            "label": "Przyciski",
+                            "name": "section_buttons",
+                            "type": "repeater",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "button_label": "Dodaj przycisk",
+                            "sub_fields": [
+                                {
+                                    "key": "field_dabex_hero_button_label",
+                                    "label": "Etykieta",
+                                    "name": "label",
+                                    "type": "text",
+                                    "required": 1,
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "key": "field_dabex_hero_button_link",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "type": "link",
+                                    "required": 1,
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                },
+                                {
+                                    "key": "field_dabex_hero_button_variant",
+                                    "label": "Styl",
+                                    "name": "variant",
+                                    "type": "select",
+                                    "choices": {
+                                        "primary": "Primary",
+                                        "light": "Light",
+                                        "outline-light": "Outline Light",
+                                        "outline-dark": "Outline Dark"
+                                    },
+                                    "default_value": "primary",
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "ui": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_dabex_hero_background_image",
+                            "label": "T?o hero",
+                            "name": "hero_background_image",
+                            "type": "image",
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_dabex_hero_overlay_color",
+                            "label": "Nak?adka t?a",
+                            "name": "hero_overlay",
+                            "type": "select",
+                            "choices": {
+                                "": "Brak",
+                                "dark": "Ciemna",
+                                "primary": "Primary",
+                                "custom": "W?asny kolor (poni?ej)"
+                            },
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_dabex_hero_overlay_color_custom",
+                            "label": "Kolor niestandardowy",
+                            "name": "hero_overlay_color",
+                            "type": "color_picker",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_dabex_hero_overlay_color",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#000000"
+                        },
+                        {
+                            "key": "field_dabex_hero_overlay_opacity",
+                            "label": "Przezroczysto?? nak?adki",
+                            "name": "hero_overlay_opacity",
+                            "type": "number",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_dabex_hero_overlay_color",
+                                        "operator": "!=",
+                                        "value": ""
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 0.6,
+                            "step": "0.1",
+                            "min": "0",
+                            "max": "1"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Dodaj sekcj?",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Reusable sekcje budowane w ACF Flexible Content pod motyw Dabex.",
+    "show_in_rest": 0,
+    "modified": 1734178800
+}
