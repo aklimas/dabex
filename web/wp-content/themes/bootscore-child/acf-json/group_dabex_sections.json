@@ -7,7 +7,7 @@
             "label": "Sekcje",
             "name": "sections",
             "type": "flexible_content",
-            "instructions": "Dodawaj gotowe sekcje projektu. Mo?esz zmienia? ich kolejno?? metod? przeci?gnij i upu??.",
+            "instructions": "Dodawaj gotowe sekcje projektu. Możesz zmieniać ich kolejność metodą przeciągnij i upuść.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,7 +19,7 @@
                 "layout_dabex_section_generic": {
                     "key": "layout_dabex_section_generic",
                     "name": "section-generic",
-                    "label": "Sekcja og?lna",
+                    "label": "Sekcja ogólna",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -27,7 +27,7 @@
                             "label": "ID sekcji",
                             "name": "section_id",
                             "type": "text",
-                            "instructions": "Opcjonalne ID HTML (np. do nawigacji anchor). Je?li puste, zostanie wygenerowane automatycznie.",
+                            "instructions": "Opcjonalne ID HTML (np. do nawigacji anchor). Jeśli puste, zostanie wygenerowane automatycznie.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -43,10 +43,10 @@
                         },
                         {
                             "key": "field_dabex_generic_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap (py-*).",
+                            "instructions": "Mapuje się na klasy Bootstrap (py-*).",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -56,11 +56,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -72,10 +72,10 @@
                         },
                         {
                             "key": "field_dabex_generic_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz predefiniowane t?o i kolor tekstu.",
+                            "instructions": "Wybierz predefiniowane tło i kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -84,8 +84,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -101,10 +101,10 @@
                         },
                         {
                             "key": "field_dabex_generic_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
-                            "instructions": "W??cz, aby sekcja by?a rozci?gni?ta na pe?n? szeroko?? okna (bez kontenera).",
+                            "instructions": "Włącz, aby sekcja była rozciągnięta na pełną szerokość okna (bez kontenera).",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -112,7 +112,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (bez standardowego kontenera)",
+                            "message": "Pełna szerokość (bez standardowego kontenera)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -120,7 +120,7 @@
                         },
                         {
                             "key": "field_dabex_generic_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "section_title",
                             "type": "text",
                             "instructions": "",
@@ -139,7 +139,7 @@
                         },
                         {
                             "key": "field_dabex_generic_content",
-                            "label": "Tre??",
+                            "label": "Treść",
                             "name": "section_content",
                             "type": "wysiwyg",
                             "instructions": "",
@@ -161,7 +161,7 @@
                             "label": "Media",
                             "name": "section_media",
                             "type": "image",
-                            "instructions": "Obraz lub grafika wy?wietlana obok tre?ci.",
+                            "instructions": "Obraz lub grafika wyświetlana obok treści.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -446,7 +446,7 @@
                                 "": "Brak",
                                 "dark": "Ciemna",
                                 "primary": "Primary",
-                                "custom": "W?asny kolor (poni?ej)"
+                                "custom": "Własny kolor (poniżej)"
                             },
                             "wrapper": {
                                 "width": "25",
@@ -531,10 +531,10 @@
                         },
                         {
                             "key": "field_dabex_catalog_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -544,11 +544,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -560,10 +560,10 @@
                         },
                         {
                             "key": "field_dabex_catalog_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -572,8 +572,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -590,7 +590,7 @@
                         },
                         {
                             "key": "field_dabex_catalog_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -601,7 +601,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -609,7 +609,7 @@
                         },
                         {
                             "key": "field_dabex_catalog_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "catalog_title",
                             "type": "text",
                             "wrapper": {
@@ -617,7 +617,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "Poznaj najlepsze ?rodki czysto?ci dla firm i dom?w"
+                            "default_value": "Poznaj najlepsze środki czystości dla firm i domów"
                         },
                         {
                             "key": "field_dabex_catalog_subtitle",
@@ -687,7 +687,7 @@
                                 },
                                 {
                                     "key": "field_dabex_catalog_card_title",
-                                    "label": "Tytu?",
+                                    "label": "Tytuł",
                                     "name": "title",
                                     "type": "text",
                                     "wrapper": {
@@ -753,10 +753,10 @@
                         },
                         {
                             "key": "field_dabex_brand_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -766,11 +766,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -782,10 +782,10 @@
                         },
                         {
                             "key": "field_dabex_brand_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -794,8 +794,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -812,7 +812,7 @@
                         },
                         {
                             "key": "field_dabex_brand_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -823,7 +823,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -854,7 +854,7 @@
                         },
                         {
                             "key": "field_dabex_brand_highlight",
-                            "label": "Nag??wek",
+                            "label": "Nagłówek",
                             "name": "brand_heading",
                             "type": "text",
                             "wrapper": {
@@ -890,7 +890,7 @@
                         },
                         {
                             "key": "field_dabex_brand_cards",
-                            "label": "Kafle produkt?w",
+                            "label": "Kafle produktów",
                             "name": "brand_cards",
                             "type": "repeater",
                             "layout": "table",
@@ -910,7 +910,7 @@
                                 },
                                 {
                                     "key": "field_dabex_brand_card_title",
-                                    "label": "Tytu?",
+                                    "label": "Tytuł",
                                     "name": "title",
                                     "type": "text",
                                     "wrapper": {
@@ -952,7 +952,7 @@
                 "layout_dabex_section_benefits": {
                     "key": "layout_dabex_section_benefits",
                     "name": "section-benefits",
-                    "label": "Korzy?ci / USP",
+                    "label": "Korzyści / USP",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -976,10 +976,10 @@
                         },
                         {
                             "key": "field_dabex_benefits_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -989,11 +989,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -1005,10 +1005,10 @@
                         },
                         {
                             "key": "field_dabex_benefits_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1017,8 +1017,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -1035,7 +1035,7 @@
                         },
                         {
                             "key": "field_dabex_benefits_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -1046,7 +1046,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -1054,7 +1054,7 @@
                         },
                         {
                             "key": "field_dabex_benefits_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "benefits_title",
                             "type": "text",
                             "wrapper": {
@@ -1077,11 +1077,11 @@
                         },
                         {
                             "key": "field_dabex_benefits_items",
-                            "label": "Korzy?ci",
+                            "label": "Korzyści",
                             "name": "benefits",
                             "type": "repeater",
                             "layout": "block",
-                            "button_label": "Dodaj korzy??",
+                            "button_label": "Dodaj korzyść",
                             "sub_fields": [
                                 {
                                     "key": "field_dabex_benefits_icon",
@@ -1093,11 +1093,11 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "instructions": "Wpisz klas? Font Awesome lub SVG inline."
+                                    "instructions": "Wpisz klasę Font Awesome lub SVG inline."
                                 },
                                 {
                                     "key": "field_dabex_benefits_item_title",
-                                    "label": "Tytu?",
+                                    "label": "Tytuł",
                                     "name": "title",
                                     "type": "text",
                                     "wrapper": {
@@ -1127,7 +1127,7 @@
                 "layout_dabex_section_highlight": {
                     "key": "layout_dabex_section_highlight",
                     "name": "section-highlight",
-                    "label": "Sekcja podw?jna CTA",
+                    "label": "Sekcja podwójna CTA",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1151,10 +1151,10 @@
                         },
                         {
                             "key": "field_dabex_highlight_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1164,11 +1164,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -1180,10 +1180,10 @@
                         },
                         {
                             "key": "field_dabex_highlight_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1192,8 +1192,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -1210,7 +1210,7 @@
                         },
                         {
                             "key": "field_dabex_highlight_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -1221,7 +1221,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -1229,7 +1229,7 @@
                         },
                         {
                             "key": "field_dabex_highlight_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "highlight_title",
                             "type": "text",
                             "wrapper": {
@@ -1258,11 +1258,11 @@
                             "layout": "block",
                             "min": 1,
                             "max": 2,
-                            "button_label": "Dodaj kart?",
+                            "button_label": "Dodaj kartę",
                             "sub_fields": [
                                 {
                                     "key": "field_dabex_highlight_card_title",
-                                    "label": "Tytu?",
+                                    "label": "Tytuł",
                                     "name": "title",
                                     "type": "text",
                                     "wrapper": {
@@ -1328,10 +1328,10 @@
                         },
                         {
                             "key": "field_dabex_blog_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1341,11 +1341,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -1357,10 +1357,10 @@
                         },
                         {
                             "key": "field_dabex_blog_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1369,8 +1369,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -1387,7 +1387,7 @@
                         },
                         {
                             "key": "field_dabex_blog_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -1398,7 +1398,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -1406,7 +1406,7 @@
                         },
                         {
                             "key": "field_dabex_blog_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "blog_title",
                             "type": "text",
                             "wrapper": {
@@ -1429,7 +1429,7 @@
                         },
                         {
                             "key": "field_dabex_blog_category",
-                            "label": "Kategoria wpis?w",
+                            "label": "Kategoria wpisów",
                             "name": "blog_category",
                             "type": "taxonomy",
                             "taxonomy": "category",
@@ -1445,7 +1445,7 @@
                         },
                         {
                             "key": "field_dabex_blog_count",
-                            "label": "Liczba wpis?w",
+                            "label": "Liczba wpisów",
                             "name": "blog_count",
                             "type": "number",
                             "default_value": 3,
@@ -1500,10 +1500,10 @@
                         },
                         {
                             "key": "field_dabex_contact_section_spacing",
-                            "label": "Odst?py pionowe",
+                            "label": "Odstępy pionowe",
                             "name": "section_spacing",
                             "type": "select",
-                            "instructions": "Mapuje si? na klasy Bootstrap.",
+                            "instructions": "Mapuje się na klasy Bootstrap.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1513,11 +1513,11 @@
                             },
                             "choices": {
                                 "none": "Brak",
-                                "xs": "Bardzo ma?e",
-                                "sm": "Ma?e",
-                                "default": "Domy?lne",
-                                "lg": "Du?e",
-                                "xl": "Bardzo du?e"
+                                "xs": "Bardzo małe",
+                                "sm": "Małe",
+                                "default": "Domyślne",
+                                "lg": "Duże",
+                                "xl": "Bardzo duże"
                             },
                             "default_value": "default",
                             "return_format": "value",
@@ -1529,10 +1529,10 @@
                         },
                         {
                             "key": "field_dabex_contact_section_theme",
-                            "label": "Motyw t?a",
+                            "label": "Motyw tła",
                             "name": "section_theme",
                             "type": "select",
-                            "instructions": "Wybierz t?o/kolor tekstu.",
+                            "instructions": "Wybierz tło/kolor tekstu.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -1541,8 +1541,8 @@
                                 "id": ""
                             },
                             "choices": {
-                                "": "Domy?lne",
-                                "light": "Jasne t?o",
+                                "": "Domyślne",
+                                "light": "Jasne tło",
                                 "muted": "Muted",
                                 "dark": "Ciemne",
                                 "primary": "Primary",
@@ -1559,7 +1559,7 @@
                         },
                         {
                             "key": "field_dabex_contact_section_fullwidth",
-                            "label": "Pe?na szeroko??",
+                            "label": "Pełna szerokość",
                             "name": "section_full_width",
                             "type": "true_false",
                             "instructions": "",
@@ -1570,7 +1570,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "message": "Pe?na szeroko?? (container-fluid)",
+                            "message": "Pełna szerokość (container-fluid)",
                             "default_value": 0,
                             "ui": 1,
                             "ui_on_text": "Tak",
@@ -1578,7 +1578,7 @@
                         },
                         {
                             "key": "field_dabex_contact_title",
-                            "label": "Tytu?",
+                            "label": "Tytuł",
                             "name": "contact_title",
                             "type": "text",
                             "wrapper": {
