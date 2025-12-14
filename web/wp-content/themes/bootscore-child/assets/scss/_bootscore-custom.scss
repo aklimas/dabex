@@ -85,9 +85,32 @@
 }
 
 .dabex-section--section-brand {
-  .brand-logo {
-    max-height: 60px;
+  .brand-logo-grid {
+    .brand-logo-tile {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #fff;
+
+      img {
+        max-height: 60px;
+        width: auto;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 1rem 2rem rgba(15, 27, 76, 0.12);
+      }
+    }
+  }
+
+  .brand-modal__logo {
+    max-height: 70px;
     width: auto;
+  }
+
+  .feature-card__icon {
+    font-size: 2rem;
+    color: #1e73be;
+    min-width: 2.5rem;
   }
 }
 

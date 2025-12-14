@@ -122,7 +122,7 @@ Tę dokumentację aktualizujemy za każdym razem, gdy wypracujemy nowy pattern (
 - `section-hero` – nagłówek strony z animacją/obrazem, CTA i opcjonalną nakładką.
 - `section-generic` – uniwersalny blok tekst + media.
 - `section-catalog` – siatka kategorii/marek z filtrami (2×4 kafle).
-- `section-brand` – spotlight jednej marki z opisem i kaflami produktów.
+- `section-brand` – grid logotypów otwierających modal z opisem, highlightami i linkami do kategorii.
 - `section-benefits` – lista korzyści/USP w układzie 3 kolumn.
 - `section-highlight` – podwójne CTA (np. dopasowane rozwiązania + szkolenia).
 - `section-blog` – teaser bazy wiedzy (WP_Query).

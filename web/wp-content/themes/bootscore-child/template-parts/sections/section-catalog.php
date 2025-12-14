@@ -32,7 +32,7 @@ $cards   = is_array($fields['catalog_cards'] ?? null) ? $fields['catalog_cards']
         <?php if ($subtitle) : ?>
           <p class="lead text-muted mb-0"><?= esc_html($subtitle); ?></p>
         <?php endif; ?>
-      </div>gggg
+      </div>
       <?php if (!empty($filters)) : ?>
         <div class="col-12 col-lg-5">
           <div class="dabex-catalog__filters d-flex flex-wrap gap-2 justify-content-lg-end mt-3 mt-lg-0">
