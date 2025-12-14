@@ -25,7 +25,7 @@
 !/wp-content/plugins/index.php
 /wp-content/mu-plugins/
 !/wp-content/mu-plugins/index.php
-/wp-content/themes/
+!/wp-content/themes/
 !/wp-content/themes/index.php
 
 # WooCommerce and other plugins often build assets into these dirs.
