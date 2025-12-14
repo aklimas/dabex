@@ -1,0 +1,52 @@
+# WordPress core files are managed via official releases.
+/wp-admin/
+/wp-includes/
+/license.txt
+/readme.html
+
+# Environment-specific configs and secrets.
+/wp-config.php
+/wp-config-sample.php
+/wp-config-ddev.php
+/wp-config-local.php
+/.wp-env.json
+
+# WordPress generated directories.
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/blogs.dir/
+/wp-content/languages/
+/wp-content/languages/plugins/
+/wp-content/languages/themes/
+
+# Ignore bundled plugins and themes; commit only custom code.
+/wp-content/plugins/
+!/wp-content/plugins/index.php
+/wp-content/mu-plugins/
+!/wp-content/mu-plugins/index.php
+/wp-content/themes/
+!/wp-content/themes/index.php
+
+# WooCommerce and other plugins often build assets into these dirs.
+/wp-content/plugins/*/vendor/
+/wp-content/plugins/*/node_modules/
+/wp-content/themes/*/node_modules/
+/wp-content/themes/*/dist/
+
+# Common temporary files.
+*.log
+*.sql
+*.sqlite
+.DS_Store
+Thumbs.db
+
+# Tooling artifacts.
+/node_modules/
+/vendor/
+/composer.lock
+/package-lock.json
+/yarn.lock
+
+# Drupal/legacy files that sometimes sneak in.
+/drushrc.php
